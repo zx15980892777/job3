@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轻音乐阅读夜 · Soft Music Reading</title>
+    <style>
+        .page {
+            display: inline-block;
+            background-color: #FFE6EE;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        /* 后代选择器 */
+        div table a {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #8B475D;
+        }
+        
+        /* 链接伪类 */
+        a:link {
+            color: #C71585;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: #8B4789;
+        }
+        
+        a:hover {
+            color: #FF69B4;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: #DC143C;
+        }
+        
+        /* 并集选择器 */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Microsoft YaHei', sans-serif;
+            color: #8B475D;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFB6C1;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            border-left: 5px solid #FFB6C1;
+            padding-left: 10px;
+        }
+        
+        h3 {
+            border-bottom: 1px dashed #FFB6C1;
+            padding-bottom: 5px;
+        }
+        
+        /* ID选择器 */
+        p#intro {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #8B475D;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #FF69B4;
+        }
+        
+        /* 带类名的链接 */
+        a.red {
+            color: #FF1493;
+            font-weight: bold;
+        }
+        
+        a.blue {
+            color: #4169E1;
+            font-weight: bold;
+        }
+        
+        /* 伪元素 */
+        p::first-letter {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #8B475D;
+        }
+        
+        div.notice::first-line {
+            font-weight: bold;
+            color: #8B475D;
+        }
+        
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            border: 1px solid #DB7093;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: rgba(219, 112, 147, 0.2);
+            color: #8B475D;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* 公告样式 */
+        .notice {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 1px dashed #DB7093;
+        }
+        
+        /* 链接区域样式 */
+        .links {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .links a {
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .links a.red {
+            background-color: rgba(255, 20, 147, 0.1);
+            border: 1px solid #FF1493;
+        }
+        
+        .links a.blue {
+            background-color: rgba(65, 105, 225, 0.1);
+            border: 1px solid #4169E1;
+        }
+        
+        /* 温柔风格的文本 */
+        .gentle-text {
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+        
+        /* 区域样式 */
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ①顶部标题区 -->
+        <div class="section">
+            <h1>轻音乐阅读夜 · Soft Music Reading</h1>
+        </div>
+        
+        <!-- ②活动介绍区 -->
+        <div class="section">
+            <h2 id="intro">活动介绍</h2>
+            <p class="gentle-text">在轻柔的音乐声中，让心灵沉浸在文字的世界里。这里没有喧嚣，只有宁静；没有压力，只有放松。让优美的旋律陪伴您的阅读时光，为您营造一个温馨舒适的阅读空间。</p>
+            
+            <p class="gentle-text">我们精心挑选了舒缓的钢琴曲、轻柔的爵士乐和空灵的自然音乐，为您打造完美的阅读背景音。研究表明，适当的背景音乐可以提高阅读专注度，让您更深入地沉浸在书中的世界。</p>
+            
+            <p class="gentle-text">每一次轻音乐阅读夜都是一次心灵的旅行，在音符与文字的交织中，找到内心的平静与安宁。无论您是喜欢文学经典、现代小说还是诗歌散文，这里都有适合您的阅读角落。</p>
+            
+            <p id="intro">重要提示：请自备喜欢的书籍和舒适的坐垫，我们会提供茶水和小点心，让您的阅读体验更加完美。</p>
+        </div>
+        
+        <!-- ③活动报名信息表格区 -->
+        <div class="section">
+            <h3>本周阅读参与者</h3>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <th>阅读书籍</th>
+                    <th>阅读状态</th>
+                </tr>
+                <tr>
+                    <td>林晓</td>
+                    <td>《追风筝的人》</td>
+                    <td>专注中</td>
+                </tr>
+                <tr>
+                    <td>王明</td>
+                    <td>《百年孤独》</td>
+                    <td>松弛中</td>
+                </tr>
+                <tr>
+                    <td>张雨</td>
+                    <td>《小王子》</td>
+                    <td>聆听中</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- ④页面链接区 -->
+        <div class="section">
+            <div class="links">
+                <a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red">查看往期活动照片</a>
+                <a href="https://zx15980892777.github.io/job3/job3.html" class="blue">在线咨询活动详情</a>
+            </div>
+        </div>
+        
+        <!-- ⑤底部公告区 -->
+        <div class="section">
+            <div class="notice">
+                欢迎加入我们的轻音乐阅读夜活动！<br>
+                每周五晚7:00-9:00，在樱花厅举行。<br>
+                请提前10分钟到场，选择您喜欢的座位。
+            </div>
+            <div class="notice">
+                本月特别活动：古典音乐与文学之夜<br>
+                特邀钢琴师现场演奏，配合经典文学作品朗读。<br>
+                名额有限，请尽早报名。
+            </div>
+            <div class="notice">
+                温馨提示：<br>
+                请保持手机静音，尊重他人的阅读体验。<br>
+                活动期间提供免费WiFi和充电服务。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
